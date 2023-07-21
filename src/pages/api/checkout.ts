@@ -10,8 +10,8 @@ export default async function handler(
   const modifiedItems = items.map((item: StoreProduct) => ({
     quantity: item.quantity,
     price_data: {
-      currency: "usd",
-      unit_amount: item.price * 100,
+      currency: "INR",
+      unit_amount: item.price * 10000,
       product_data: {
         name: item.title,
         description: item.description,
