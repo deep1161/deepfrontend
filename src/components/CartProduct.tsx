@@ -43,7 +43,7 @@ const CartProduct = ({ item }: cartProductsProps) => {
           <p className="text-sm text-gray-600">
             Unit Price{" "}
             <span className="font-semibold text-amazon_blue">
-              <FormattedPrice amount={item.price} />
+              <FormattedPrice amount={item.price * 100} />
             </span>
           </p>
           <div className="flex items-center gap-6">
@@ -101,7 +101,7 @@ const CartProduct = ({ item }: cartProductsProps) => {
           </div>
         </div>
         <div className="text-lg font-semibold text-amazon_blue">
-          <FormattedPrice amount={item.price * item.quantity} />
+          <FormattedPrice amount={item.price * 100 * item.quantity} />
         </div>
       </div>
     </div>

@@ -59,7 +59,7 @@ const CartPayment = () => {
       <p className="flex items-center justify-between px-2 font-semibold">
         Total:{" "}
         <span className="font-bold text-xl">
-          <FormattedPrice amount={totalAmount} />
+          <FormattedPrice amount={totalAmount * 100} />
         </span>
       </p>
       {userInfo ? (
